@@ -1,0 +1,57 @@
+/* Estilo general */
+* {
+    font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-size: 10px;
+    color: white;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+#waybar {
+    background-color: rgba(28, 28, 30, 0.3); /* Más transparente */
+    border-radius: 8px;
+    padding: 5px 9px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#clock, #network, #pulseaudio, #cpu, #memory, #temperature, #battery {
+    padding: 6px 14px;
+    font-weight: 500;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#clock {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+#battery {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 3px 10px;
+    font-size: 12px;
+}
+
+#window {
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+#custom-launcher {
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#tray {
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+/* Hover en módulos */
+#waybar .module:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
